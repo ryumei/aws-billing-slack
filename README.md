@@ -27,7 +27,7 @@ Create an alias named ``PROD`` as `$LATEST`
 Trigger: CloudWatch Events - Schedule
 
 Script: sample code
-Handler: exports.handler
+Handler: leave index.handler (exports.handler)
 Role: *billing-slack*
 
 ### On Github

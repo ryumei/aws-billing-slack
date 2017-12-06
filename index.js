@@ -24,8 +24,8 @@ var postBillingToSlack = function(billings, context) {
     var message = {
         channel: channel_name,
         attachments: [{
-            fallback: '今月のAWSの利用費は、' + floatFormat(billings['Total'], 2) + ' USDです。',
-            pretext: '今月のAWSの利用費は…',
+            fallback: '今月の AWS の利用費は、' + floatFormat(billings['Total'], 2) + ' USDです。',
+            pretext: '今月の AWS の利用費は…',
             color: 'good',
             fields: fields
         }]
@@ -138,5 +138,4 @@ var getBilling = function(context) {
 
 exports.handler = function(event, context, callback) {
     getBilling(context);
-    callback(null, 'Hello from Lambda from Codeship' + channel_name);
 }
