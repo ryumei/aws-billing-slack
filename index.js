@@ -1,3 +1,3 @@
 exports.handler = (event, context, callback) => {
-    callback(null, 'Hello from Lambda');
+    callback(null, 'Hello from Lambda from Codeship');
 };
