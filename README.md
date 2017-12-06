@@ -3,7 +3,18 @@ AWS daily billing to Slack
 
 for a my first study with Codeship
 
+## Description
 
+## Requirement
+
+Acounts / subscription
+
+* AWS
+* Slack
+* Github (optional)
+* Codeship (optional)
+
+## Usage / How to deploy
 
 ### On AWS
 
@@ -11,9 +22,9 @@ for a my first study with Codeship
 
 Create an IAM Policy
 
-Create an IAM user for codeship-deployment
-
 Create an IAM role *billing-slack* with CloudWatchReadOnlyAccess
+
+Create an IAM user for codeship-deployment (optional)
 
 #### Lambda
 
@@ -34,8 +45,16 @@ Role: *billing-slack*
 
 * Create a repository for Lambda function
 
-### On Codeship
+### On Codeship (optional)
 
 * Create a project
 * Connect with Github repository
 * Set environmental variables
+
+## License
+
+[Apache License Version 2.0](https://www.apache.org/licenses/LICENSE-2.0)
+
+## Author
+
+NAKAJIMA Takaaki
