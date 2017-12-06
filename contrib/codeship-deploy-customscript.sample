@@ -1,0 +1,8 @@
+pip install awscli
+zip -r NewFunction.zip *
+aws lambda update-function-code --function-name NewFunction --zip-file fileb://NewFunction.zip
+version=`aws lambda publish-version --function-name NewFunction | jq -r .Version`
+aws lambda update-alias --function-name NewFunction --function-version $version --name PROD
+aws lambda get-function --function-name NewFunction
+aws lambda invoke --function-name NewFunction --payload "$(cat data.json)" --qualifier PROD lambda_output.txt
+cat lambda_output.txt

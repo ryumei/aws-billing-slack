@@ -1,0 +1,17 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "lambda:InvokeFunction",
+                "lambda:UpdateFunctionConfiguration",
+                "lambda:UpdateFunctionCode",
+                "lambda:GetFunction",
+                "lambda:PublishVersion",
+                "lambda:UpdateAlias"
+            ],
+            "Resource": "arn:aws:lambda:*:*:function:*"
+        }
+    ]
+}
