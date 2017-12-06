@@ -5,7 +5,7 @@ var cw    = new aws.CloudWatch({region: 'ap-northeast-1', endpoint: 'https://mon
 
 var channel_name = process.env.SLACK_CHANNEL;
 var channel_url = process.env.SLACK_WEBHOOK_URL;
-var serviceNames = ['AmazonEC2', 'AmazonRDS', 'AmazonRoute53', 'AmazonS3', 'AmazonSNS', 'AWSDataTransfer', 'AWSLambda', 'AWSQueueService'];
+var serviceNames = ['AmazonEC2', 'AmazonRDS', 'AmazonRoute53', 'AmazonS3', 'AmazonSNS', 'AWSDataTransfer', 'AWSLambda', 'AWSQueueService', 'AWSConfig'];
 
 var floatFormat = function(number, n) {
     var _pow = Math.pow(10 , n) ;
